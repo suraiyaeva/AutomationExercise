@@ -10,7 +10,7 @@ describe("UI Testing", () => {
   const user = {
     fname: "Siam",
     sname: "Jahan",
-    email: "farjua44@example.com",
+    email: "aminkhan44@example.com",
     password: "2018331044",
     dob: "6/April/2000",
     company: "tekarsh",
@@ -26,8 +26,8 @@ describe("UI Testing", () => {
 
   it("Visit the Login Page and Register", () => {
     loginPage.visit();
-    //loginPage.fillPersonalInformation(user);
-    //loginPage.fillAddressInformation(user);
+    loginPage.fillPersonalInformation(user);
+    loginPage.fillAddressInformation(user);
   });
 
   it("Select Product Category", () => {
